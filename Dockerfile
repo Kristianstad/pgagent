@@ -3,12 +3,12 @@
 # =========================================================================
 # ARGs (can be passed to Build/Final) <BEGIN>
 ARG SaM_REPO=${SaM_REPO:-ghcr.io/kristianstad/secure_and_minimal}
-ARG ALPINE_VERSION=${ALPINE_VERSION:-3.17}
+ARG ALPINE_VERSION=${ALPINE_VERSION:-3.18}
 ARG PGAGENT_VERSION="4.2.1"
 ARG CONTENTIMAGE1="ghcr.io/kristianstad/sam-content:pgagent-$PGAGENT_VERSION"
 ARG CONTENTSOURCE1="/content-app/usr/bin/pgagent"
 ARG CONTENTDESTINATION1="/tmp/finalfs/usr/bin/pgagent"
-ARG RUNDEPS="libpq boost1.80"
+ARG RUNDEPS="libpq boost1.82"
 ARG STARTUPEXECUTABLES="/usr/bin/pgagent"
 # ARGs (can be passed to Build/Final) </END>
 
